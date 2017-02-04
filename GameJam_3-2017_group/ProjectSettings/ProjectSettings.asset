@@ -455,6 +455,8 @@ PlayerSettings:
   cloudServicesEnabled:
     Build: 1
     Collab: 1
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   cloudProjectId: e88690fa-12f3-4589-b55a-4f75c900611b
   projectName: GameJam_3-2017_group

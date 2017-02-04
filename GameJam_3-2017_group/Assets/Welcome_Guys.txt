@@ -2,11 +2,33 @@ Game Jam February 3rd, 2017
 
 2D fighting Game
 
-* Point One
-* Point One
-* Point One
-* Point One
-* Point One
-* Point One
-* Point One
-* Point One
+* Art Paul
+Background
+* Main menu
+* actual in-game background
+Characters
+* one melee character
+* one ranged character
+jump animation
+attack animation
+Forgrounds
+* 2 platforms
+* 2 towers
+
+
+
+* Pogramming Tim
+movement
+platforming through the ground
+attacks
+HP- for allies and enemies
+Respawn timer
+
+* Programming Aaron
+enemy units
+enemy units spawn
+enemy units walk
+enemy units stop
+bomber and his explosion
+Win states
+
