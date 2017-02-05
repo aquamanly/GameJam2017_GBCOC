@@ -7,6 +7,13 @@ public class KillPlayer : MonoBehaviour {
 	public float  playerhealth; //this is now a float type variable. A variable's type is defined as a few thigns
     public bool isAlive = true;
     public GameObject otherThing;
+    public GameObject Red;
+    public GameObject Green;
+    public GameObject top;
+    public GameObject left;
+    public GameObject right;
+    public GameObject bottom;
+    
 
 	void Start () {
         //Respawnmanager = FindObjectOfType<GameObject> ();	
@@ -28,6 +35,16 @@ public class KillPlayer : MonoBehaviour {
             //^you can't reference an object or it's function this way
         }
 
-	}
+        if (other.gameObject == Red)
+        {
+            Destroy(Red);
+            
+        }
+        else if (other.gameObject == Green)
+        {
+            Destroy(Green);
+        }
+
+    }
 
 }

@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\movement.cs" />
     <Compile Include="Assets\Scripts\playerattack.cs" />
     <Compile Include="Assets\Scripts\playerhealth.cs" />
+    <Compile Include="Assets\killOnContact.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Welcome_Guys.txt" />
