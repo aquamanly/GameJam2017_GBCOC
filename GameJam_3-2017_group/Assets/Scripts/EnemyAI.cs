@@ -13,6 +13,7 @@ public partial class EnemyAI : MonoBehaviour{
     public int frame;
     public float Direction;
     public float seconds;
+    public bool player1;
 
     void Start()
     {
@@ -25,7 +26,14 @@ public partial class EnemyAI : MonoBehaviour{
     //great for physics calculations
     void FixedUpdate()
     {
-        Direction = -2;
+        if (!player1)
+        {
+            Direction = 2;
+        }
+        else
+        {
+            Direction = -2;
+        }
         if (radio)
             StartCoroutine(MovingIntern());
         //our intern moves to the left.
@@ -38,12 +46,14 @@ public partial class EnemyAI : MonoBehaviour{
     {
         rb.velocity = new Vector2(Direction, 0);
         yield return new WaitForSecondsRealtime(seconds);
+        PlaceObstacle();
         radio = false;
     }
 
-    IEnumerator PlaceObstacle()
+    public void PlaceObstacle()
     {
-        yield return new WaitForSecondsRealtime(seconds);
+        
+        this.transform.DetachChildren();
     }
 
     void Update()

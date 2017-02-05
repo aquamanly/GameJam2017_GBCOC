@@ -41,3 +41,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background_farback
+    uniqueID: 1895736257
+    locked: 0
+  - name: background_norm
+    uniqueID: 745979691
+    locked: 0
+  - name: foreground
+    uniqueID: 2480138497
+    locked: 0
+  - name: Doors
+    uniqueID: 4067551197
+    locked: 0
+  - name: characters
+    uniqueID: 2116045227
+    locked: 0
+  - name: bomb
+    uniqueID: 1189824537
+    locked: 0
+  - name: red
+    uniqueID: 1297830763
+    locked: 0
+  - name: green
+    uniqueID: 962130439
+    locked: 0

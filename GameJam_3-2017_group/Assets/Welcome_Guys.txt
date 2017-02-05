@@ -25,10 +25,10 @@ HP- for allies and enemies
 Respawn timer
 
 * Programming Aaron
-enemy units
-enemy units spawn
-enemy units walk
-enemy units stop
-bomber and his explosion
+enemy units-- the spawner words
+enemy units spawn-- again, the spawner works
+enemy units walk-- they use velocity that end upon the arrival
+enemy units stop-- yep, they stop at a certain point
+bomber and his explosion-- the bomb does explode
 Win states
 

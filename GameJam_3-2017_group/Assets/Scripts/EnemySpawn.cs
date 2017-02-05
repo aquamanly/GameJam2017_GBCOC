@@ -5,33 +5,39 @@ using UnityEngine;
 public class EnemySpawn : MonoBehaviour {
 
     //enemies to spawn every 60 secconds
-    public GameObject prefab;
-    public GameObject spawnLocation;
-    private Vector2 position;
-    public float seconds;
-    public GameObject newVil;
+    public GameObject redPrefab;
+    public GameObject redSpawnLocation;
+    private Vector2 redPosition;
+    public float redSecondsToSpawnAVillain;
+    public GameObject redNewVil;
+
+    public GameObject greenPrefab;
+    public GameObject greenSpawnLocation;
+    private Vector2 greenPosition;
+    public float greenSecondsToSpawnAVillain;
+    public GameObject greenNewVil;
+
+    public float secondsTillCharacterDestroysItself;
 
     void Start()
     {
-        position = spawnLocation.transform.position;
+        redPosition = redSpawnLocation.transform.position;
+        greenPosition = greenSpawnLocation.transform.position;
         StartCoroutine(Spawn());
 
-    }
-
-    void Update()
-    {
-
-       
     }
 
     IEnumerator Spawn()
     {
         while (true)
         {
-            yield return new WaitForSecondsRealtime(seconds);
-            newVil =  Instantiate(prefab, position, Quaternion.identity);
-            yield return new WaitForSecondsRealtime(seconds);
-            Destroy(newVil);
+            yield return new WaitForSecondsRealtime(redSecondsToSpawnAVillain);
+            yield return new WaitForSecondsRealtime(greenSecondsToSpawnAVillain);
+            redNewVil =  Instantiate(redPrefab, redPosition, Quaternion.identity);
+            greenNewVil = Instantiate(greenPrefab, greenPosition, Quaternion.identity);
+            yield return new WaitForSecondsRealtime(secondsTillCharacterDestroysItself);
+            Destroy(redNewVil);
+            Destroy(greenNewVil);
         }
             
             
